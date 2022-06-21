@@ -11,7 +11,7 @@ function App() {
         </header>
          <div class="cajas_buscador">
           <div class="deporte">
-            <a href="pantalla_deporte.html">Deportes</a>
+            <link></link>
           </div>
           <div class="musica">
             <a href="pantalla_musica.html">Musica</a>
@@ -23,7 +23,7 @@ function App() {
              <a href="pantalla_estudio.html">Estudio</a>
           </div> 
         </div>
-        </center>
+      </center>
     </div>
   );
 }
