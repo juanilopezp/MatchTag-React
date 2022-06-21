@@ -1,0 +1,20 @@
+.botones{
+    width: 120px;
+    height: 80px;
+    background-color: aquamarine;
+    z-index: 10;
+}
+.matchBtn{
+    width: 120px;
+    height: 80px;
+    position: relative;
+    z-index: 5;
+}
+.esperaBtn{
+    width: 120px;
+    height: 80px;
+    position: absolute;
+    top: 49px;
+    left: 8.9px;
+    z-index: 0;
+}
