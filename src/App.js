@@ -3,6 +3,10 @@ import './App.css';
 import{Link} from 'react-router';
 
 function App() {
+  const toPage = page => event =>{
+    event.preventDefault()
+    
+  }
   return (
     <div className="App">
      <center>
@@ -13,16 +17,16 @@ function App() {
         </header>
          <div class="cajas_buscador">
           <div class="deporte">
-            <Link to='#' onclick = {toPage('pantalla_deporte')}></Link>
+            <Link to='#' onClick = {toPage('pantalla_deporte')}></Link>
           </div>
           <div class="musica">
-            <Link to='#' onclick = {toPage('pantalla_musica')}> Musica</Link>
+            <Link to='#' onClick = {toPage('pantalla_musica')}> Musica</Link>
           </div>
           <div class="pais">
-            <Link to='#' onclick = {toPage('pantalla_pais')}>Pais</Link>
+            <Link to='#' onClick = {toPage('pantalla_pais')}>Pais</Link>
           </div>
           <div class="estudio">
-             <Link to='#' onclick = {toPage('pantalla_estudio')}>Estudio</Link>
+             <Link to='#' onClick = {toPage('pantalla_estudio')}>Estudio</Link>
           </div> 
          </div>
       </center>
