@@ -1,30 +1,30 @@
 import logo from './logo.svg';
 import './App.css';
-import {Link} from 'react-router-dom';
+import{Link} from 'react-router';
 
 function App() {
   return (
     <div className="App">
      <center>
         <header>
-          
+
           <input type="search" name="busqueda"/>
           <button class="enlace" role="link" onclick="window.location='pantalla_deporte.html'">buscar</button>
         </header>
          <div class="cajas_buscador">
           <div class="deporte">
-            <link></link>
+            <Link to='#' onclick = {toPage('pantalla_deporte')}></Link>
           </div>
           <div class="musica">
-            <a href="pantalla_musica.html">Musica</a>
+            <Link to='#' onclick = {toPage('pantalla_musica')}> Musica</Link>
           </div>
           <div class="pais">
-            <a href="pantalla_pais.html">Pais</a>
+            <Link to='#' onclick = {toPage('pantalla_pais')}>Pais</Link>
           </div>
           <div class="estudio">
-             <a href="pantalla_estudio.html">Estudio</a>
+             <Link to='#' onclick = {toPage('pantalla_estudio')}>Estudio</Link>
           </div> 
-        </div>
+         </div>
       </center>
     </div>
   );
