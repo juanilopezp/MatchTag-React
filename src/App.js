@@ -1,11 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import {Link} from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
      <center>
         <header>
+          
           <input type="search" name="busqueda"/>
           <button class="enlace" role="link" onclick="window.location='pantalla_deporte.html'">buscar</button>
         </header>
