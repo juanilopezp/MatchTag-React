@@ -1,6 +1,5 @@
 import './App.css';
 import{BrowserRouter, Link, Route, Routes} from 'react-router-dom';
-import Home from './matcheo/Home';
 import Deporte from './matcheo/pantalla_deporte';
 import Musica from './matcheo/pantalla_musica'
 import Estudio from './matcheo/pantalla_estudio';
