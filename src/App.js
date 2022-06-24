@@ -1,36 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
-import{Link} from 'react-router';
+import{BrowserRouter, Link, Route, Routes} from 'react-router-dom';
+import Home from './matcheo/Home';
+import Deporte from './matcheo/pantalla_deporte';
+import Musica from './matcheo/pantalla_musica'
+import Estudio from './matcheo/pantalla_estudio';
+import Pais from './matcheo/pantalla_pais';
 
 function App() {
-  const toPage = page => event =>{
-    event.preventDefault()
-    
-  }
-  return (
-    <div className="App">
-     <center>
+  return (   
+   <BrowserRouter>
+      <center>
         <header>
-
           <input type="search" name="busqueda"/>
-          <button class="enlace" role="link" onclick="window.location='pantalla_deporte.html'">buscar</button>
+          <button class="enlace">buscar</button>
         </header>
-         <div class="cajas_buscador">
-          <div class="deporte">
-            <Link to='#' onClick = {toPage('pantalla_deporte')}></Link>
-          </div>
-          <div class="musica">
-            <Link to='#' onClick = {toPage('pantalla_musica')}> Musica</Link>
-          </div>
-          <div class="pais">
-            <Link to='#' onClick = {toPage('pantalla_pais')}>Pais</Link>
-          </div>
-          <div class="estudio">
-             <Link to='#' onClick = {toPage('pantalla_estudio')}>Estudio</Link>
-          </div> 
-         </div>
+    
+          <Routes>
+            <Route path='/pantalla_deporte' element={<Deporte/>}/>
+            <Route path='/pantalla_musica' element={<Musica/>}/>
+            <Route path='/pantalla_estudio' element={<Estudio/>}/>
+            <Route path='/pantalla_pais' element={<Pais/>}/>
+          </Routes>
+          <Link to='/pantalla_deporte'>Deportes</Link>
+          <Link to='/pantalla_musica'> Musica</Link>
+          <Link to='./pantalla_pais'>Pais</Link>
+          <Link to='./pantalla_estudio'>Estudio</Link>
       </center>
-    </div>
+    </BrowserRouter>
   );
 }
 
