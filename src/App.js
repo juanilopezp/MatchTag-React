@@ -1,11 +1,12 @@
 import './App.css';
-import{BrowserRouter, Link, Route, Routes} from 'react-router-dom';
+import{BrowserRouter, Link, Route, Routes, withRouter, useNavigate} from 'react-router-dom';
 import Deporte from './matcheo/pantalla_deporte';
 import Musica from './matcheo/pantalla_musica'
 import Estudio from './matcheo/pantalla_estudio';
 import Pais from './matcheo/pantalla_pais';
 
 function App() {
+  let history = useNavigate();
   return (   
    <BrowserRouter>
       <center>
@@ -24,6 +25,11 @@ function App() {
           <Link to='/pantalla_musica'> Musica</Link>
           <Link to='./pantalla_pais'>Pais</Link>
           <Link to='./pantalla_estudio'>Estudio</Link>
+          <button onClick={() =>{
+            history.push('/pantalla_deporte');
+          }}>
+            Deportes
+          </button>
       </center>
     </BrowserRouter>
   );
