@@ -4,9 +4,9 @@ import Deporte from './matcheo/pantalla_deporte';
 import Musica from './matcheo/pantalla_musica'
 import Estudio from './matcheo/pantalla_estudio';
 import Pais from './matcheo/pantalla_pais';
+import Home from './matcheo/Home';
 
 function App() {
-  let history = useNavigate();
   return (   
     <BrowserRouter>
           <Routes>
