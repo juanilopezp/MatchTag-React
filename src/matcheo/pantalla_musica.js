@@ -1,8 +1,13 @@
 import React from 'react'
-
+import{Link} from 'react-router-dom'
 function Musica() {
   return (
-	<div><h1>pantalla_musica</h1></div>
+    <><center>
+      <header>
+        <Link to={'/'}>Match</Link>
+      </header>
+    </center>
+    <h1>Musica</h1></>
   )
 }
 

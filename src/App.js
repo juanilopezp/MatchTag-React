@@ -8,24 +8,14 @@ import Pais from './matcheo/pantalla_pais';
 
 function App() {
   return (   
-   <BrowserRouter>
-      <center>
-        <header>
-          <input type="search" name="busqueda"/>
-          <button class="enlace">buscar</button>
-        </header>
-    
+    <BrowserRouter>
           <Routes>
+            <Route path='/' element={<Home/>}/>
             <Route path='/pantalla_deporte' element={<Deporte/>}/>
             <Route path='/pantalla_musica' element={<Musica/>}/>
             <Route path='/pantalla_estudio' element={<Estudio/>}/>
             <Route path='/pantalla_pais' element={<Pais/>}/>
           </Routes>
-          <Link to='/pantalla_deporte'>Deportes</Link>
-          <Link to='/pantalla_musica'> Musica</Link>
-          <Link to='./pantalla_pais'>Pais</Link>
-          <Link to='./pantalla_estudio'>Estudio</Link>
-      </center>
     </BrowserRouter>
   );
 }

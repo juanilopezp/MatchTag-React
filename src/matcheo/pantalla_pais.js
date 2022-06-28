@@ -1,6 +1,13 @@
 import React from "react";
-
+import{Link} from 'react-router-dom'
 function Pais(){
-	return <div> <h1>PANTALLA PAIS</h1></div>;
+	return(
+		<><center>
+		<header>
+		  <Link to={'/'}>Match</Link>
+		</header>
+	  </center>
+	  <h1>Pais</h1></>
+	)
 }
 export default Pais;
