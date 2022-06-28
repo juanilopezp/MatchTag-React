@@ -1,12 +1,12 @@
 import './App.css';
-import{BrowserRouter, Link, Route, Routes} from 'react-router-dom';
-import Home from './matcheo/Home';
+import{BrowserRouter, Link, Route, Routes, withRouter, useNavigate} from 'react-router-dom';
 import Deporte from './matcheo/pantalla_deporte';
 import Musica from './matcheo/pantalla_musica'
 import Estudio from './matcheo/pantalla_estudio';
 import Pais from './matcheo/pantalla_pais';
 
 function App() {
+  let history = useNavigate();
   return (   
     <BrowserRouter>
           <Routes>
