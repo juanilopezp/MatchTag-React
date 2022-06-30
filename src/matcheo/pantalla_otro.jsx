@@ -1,5 +1,9 @@
 function pantalla_otro(){
 	return(
+		<div>
+		<h1>Perfil en mantenimiento xdn't</h1>
+		</div>
+		/*
 			<><title>usuariox</title><link rel="stylesheet" type="text/css" href="pantalla_otro.css">
 			<script type="pantalla_otro/javascript"></script>
 			<div class="usuarioTop">
@@ -26,12 +30,13 @@ function pantalla_otro(){
 				matcheo.addEventListener('click', matcheo.style.z-index, 0)
 				espera.addEventListener('click', espera.style.z-index, 0)
 			</script>
-			{/*<div class="botones">
-<input  type="radio" name="control" id="match" />
-<label for="match" class="matchBtn" name="matchBtn">Matchear</label>
-<div class="botones2">
-<input  type="radio" name="control" id="espera" />
-<label for="espera" class="esperaBtn" name="esperaBtn">Esperar</label>
-</div>
-</div>*/}
-			)</></>
+			<div class="botones">
+		<input  type="radio" name="control" id="match" />
+		<label for="match" class="matchBtn" name="matchBtn">Matchear</label>
+		<div class="botones2">
+		<input  type="radio" name="control" id="espera" />
+		<label for="espera" class="esperaBtn" name="esperaBtn">Esperar</label>
+		</div>
+		</div>*/
+	);
+}
