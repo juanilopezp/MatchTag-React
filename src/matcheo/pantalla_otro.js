@@ -1,8 +1,8 @@
+import React from "react";
 function pantalla_otro(){
 	return(
-		<div>
-		<h1>Perfil en mantenimiento xdn't</h1>
-		</div>
+	<>
+		<h1>Perfil en mantenimiento xdn't</h1></>
 		/*
 			<><title>usuariox</title><link rel="stylesheet" type="text/css" href="pantalla_otro.css">
 			<script type="pantalla_otro/javascript"></script>
@@ -38,5 +38,6 @@ function pantalla_otro(){
 		<label for="espera" class="esperaBtn" name="esperaBtn">Esperar</label>
 		</div>
 		</div>*/
-	);
+	)
 }
+export default pantalla_otro

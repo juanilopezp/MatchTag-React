@@ -1,6 +1,5 @@
 import React from 'react'
 import { BrowserRouter , Link} from 'react-router-dom'
-
 function Home() {
   return (
      <center>
@@ -13,6 +12,7 @@ function Home() {
       <Link to='./pantalla_pais'>Pais</Link>
       <Link to='./pantalla_estudio'>Estudio</Link>  
      </center>
+
   )
 }
 

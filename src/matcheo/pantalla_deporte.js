@@ -8,9 +8,9 @@ function Deporte() {
       <header>
         <Link to={'/'}>Match</Link>
       </header>
+      <Link to = {'/pantalla_otro'}>nomPerfil</Link>
     </center>
     <h1>Deporte</h1></>
-    if ()
   )
 }
 
