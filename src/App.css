@@ -1,42 +1,6 @@
 *{
 	background-color: #e98be5;
 }
-.deporte{
-	border: 2px solid red;
-	width: 65px;
-	height: 20px;
-	border-radius: 5%;
-	padding: 40px 60px;
-	margin-top: 40px;
-	
-}
-.musica{
-	border: 2px solid red;
-	width: 65px;
-	height: 20px;
-	border-radius: 5%;
-	padding: 40px 60px;
-	margin-top: 15px;
-}
-.pais{
-	border: 2px solid red;
-	width: 65px;
-	height: 20px;
-	border-radius: 5%;
-	padding: 40px 60px;
-	margin-top: 15px;
-}
-.estudio{
-	border: 2px solid red;
-	width: 65px;
-	height: 20px;
-	border-radius: 5%;
-	padding: 40px 60px;
-	margin-top: 15px;
-}
 input[name="busqueda"]{
-	border-color: blue;
-}
-input[name="busqueda"]:hover{
 	border-color: blue;
 }

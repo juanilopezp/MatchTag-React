@@ -7,10 +7,6 @@ function Home() {
        <input type="search" name="busqueda"/>
        <button class="enlace">buscar</button>
       </header>
-      <Link to='/pantalla_deporte'>Deportes</Link>
-      <Link to='/pantalla_musica'> Musica</Link>
-      <Link to='./pantalla_pais'>Pais</Link>
-      <Link to='./pantalla_estudio'>Estudio</Link>  
      </center>
 
   )
