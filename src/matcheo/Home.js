@@ -6,6 +6,12 @@ function Home() {
       <header>
        <input type="search" name="busqueda"/>
        <button class="enlace">buscar</button>
+       <button class="Deporte">Depooooorteeee</button>
+       <button class="Musica">Musica</button>
+       <button class="Juegos">Juegos</button>
+       <button class="Cine">Cine</button>
+       <button class="Economia">Economia</button>
+       <button class="Estudio">Estudio</button>
       </header>
      </center>
 
