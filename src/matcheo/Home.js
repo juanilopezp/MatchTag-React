@@ -12,9 +12,9 @@ function Home() {
        <button class="Cine">Cine</button>
        <button class="Economia">Economia</button>
        <button class="Estudio">Estudio</button>
+       <button class="LoginBtn">YaTa</button>
       </header>
      </center>
-
   )
 }
 
