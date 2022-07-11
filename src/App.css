@@ -1,10 +1,17 @@
 *{
 	background-color: #e98be5;
+
 }
 input[name="busqueda"]{
 	border-color: blue;
 }
+.Deporte{
+	transition-property: all;
+	transition-duration: 2s;
+}
 .Deporte:hover,.Musica:hover,.Juegos:hover,.Cine:hover,.Economia:hover,.Estudio:hover{
+
 	width: 100px;
 	height: 100px;
+
 }
