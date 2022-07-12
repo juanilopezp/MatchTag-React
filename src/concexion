@@ -1,0 +1,22 @@
+<?php
+class CConexion{
+
+    function Conexion(){
+        $host = "localhost";
+        $dbname = "Matchtag";
+        $username = "postgres";
+        $pasword = "matchtag2022";
+
+        try {
+            $conn = new PDO("pgsql:host= $host; dbname= $dbname; $username, $pasword");
+            echo "Se conecto correctamente la base de datos";
+
+         }
+        catch(PDOException $exp){
+            echo("No se pudo conecta a la base de datos $exp");
+
+        }
+        return $conn; 
+    }
+}
+?> 
