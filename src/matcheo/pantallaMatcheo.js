@@ -1,14 +1,9 @@
-import React from "react";
-import img from './messiPer.jpg';
-import './pantallaMatcheo.css';
-function Matcheo(){
-    return(
-        <><img src={img} />
-        <label class='nomUsuario'></label>
-        <button class='agregarM'></button>
-        <button class='chatM'></button>
-        <label class='tagSim'></label>
-        </>
-    );
+function pantallaMatcheo(){
+    let irPerfil =  document.getElementsByClassName("verPerfil");
+    irPerfil.addEventListener("click", irPerfil);
+    function yendoPerfil(){
+        alert("poronga");
+    }
 }
-export default Matcheo;
+
+export default pantallaMatcheo;

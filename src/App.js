@@ -1,7 +1,7 @@
 import './App.css';
 import{BrowserRouter, Link, Route, Routes, withRouter, useNavigate} from 'react-router-dom';
 import PantallaOtro from './matcheo/pantalla_otro';
-import Matcheo from './matcheo/pantallaMatcheo';
+import Matcheo from './matcheo/pantallaMatcheo.jsx';
 import Busqueda from './matcheo/Busqueda';
 import Etiquetas from './matcheo/Etiquetas';
 
