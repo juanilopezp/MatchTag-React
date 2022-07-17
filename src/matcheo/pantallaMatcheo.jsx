@@ -14,7 +14,9 @@ function Matcheo(){
             <center>
                 <div class='fotoMatch'>
                     <img src={img} />
-                    <button class='verPerfil'>Perfil<Link to={'/pantalla_otro'}></Link></button>
+                     <Link class = 'hoverFotoMatch' to='/pantalla_otro'>
+                        Perfil
+                     </Link>
                 </div>
                 <label class='nomUsuario'></label>
                 <button class='agregarM'></button>

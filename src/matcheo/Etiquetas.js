@@ -1,5 +1,6 @@
 import React from 'react'
 import { BrowserRouter , Link} from 'react-router-dom'
+import './Etiquetas.css';
 function Etiquetas() {
   return (
      <><center>
@@ -14,7 +15,13 @@ function Etiquetas() {
       <button class="Economia">Economia</button>
       <button class="Estudio">Estudio</button>
     </center>
-    <button class="LoginBtn">YaTa</button></>
+    <Link to ='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>
+      <button class="LoginBtn">YaTa</button>
+    </Link>
+    <div class='p'>
+      <p>Encuentra el Tag perfecto para vos</p>
+    </div>
+    </>
   )
 }
 

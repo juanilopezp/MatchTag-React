@@ -1,0 +1,26 @@
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(180deg, rgba(17, 133, 133, 0.64) 0.52%, rgba(250, 201, 129, 0.828889) 70.83%, rgba(255, 80, 56, 0.72) 100%);
+    box-shadow: 8px 14px 28px rgba(0, 0, 0, 0.2);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}   
+.p{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    background-color: #908E8D;
+    border-radius: 50%;
+}
+input[name="busqueda"]{
+	border-color: blue;
+}
+.Deporte:hover,.Musica:hover,.Juegos:hover,.Cine:hover,.Economia:hover,.Estudio:hover{
+	width: 100px;
+	height: 100px;
+}
