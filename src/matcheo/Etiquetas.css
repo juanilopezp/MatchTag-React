@@ -8,19 +8,102 @@ body{
     box-shadow: 8px 14px 28px rgba(0, 0, 0, 0.2);
     background-repeat: no-repeat;
     background-attachment: fixed;
-
-}   
+}
+.Deporte{
+    background-image: url('fondoDep.jpg');
+    position: relative;
+    top: 310px;
+    margin-top: auto;
+    margin-inline: 20px;
+}
+.Musica{
+    background-image: url('fondoMus.jpg');
+    position: relative;
+    top: 310px;
+    margin-top: auto;
+    margin-inline: 20px;
+}
+.Juegos{
+    background-image: url('fondoJue.jpg');
+    position: relative;
+    top: 310px;
+    margin-top: auto;
+    margin-inline: 20px;
+}
+.Cine{
+    background-image: url('fondoCine.jpg');
+    position: relative;
+    top: 310px;
+    margin-top: auto;
+    margin-inline: 20px;
+}
+.Ciencia{
+    background-image: url('fondoCien.jpg');
+    position: relative;
+    top: 310px;
+    left: auto;
+    margin-top: auto;
+    margin-inline: 20px;
+}
+.Estudio{
+    background-image: url('fondoEst.jpg');
+    position: relative;
+    top: 310px;
+    left: 0;
+    margin-top: auto;
+    margin-inline: 20px;
+}
 .p{
-    height: 200px;
-    width: 200px;
+    padding: 15px;
+    height: 543px;
+    width: 618px;
+    left: -217px;
+    top: -314px;
+    border-radius: 50%;
     position: absolute;
     background-color: #908E8D;
-    border-radius: 50%;
+    text-align: center;
+    border: 5px solid;
+    border: linear-gradient(180deg, rgba(255, 255, 255, 0.29) 63.54%, rgba(253, 174, 56, 0.63) 81.77%, rgba(251, 8, 139, 0.22) 99.48%);
+}
+p{
+    color: white;
+    position: absolute;
+    height: 150px;
+    width: 250px;
+    top: 0px;
+    left: 43px;
+    font-style: normal;
+    font-size: 45px;
+    line-height: 44px;
+    text-align: left;
+    background-clip: text;
+    font-family: 'Kameron';
 }
 input[name="busqueda"]{
-	border-color: blue;
+    border-color: white;
+    border-style: none;
+    position: relative;
 }
-.Deporte:hover,.Musica:hover,.Juegos:hover,.Cine:hover,.Economia:hover,.Estudio:hover{
+.enlace{
+    background-image: url('lupita.png');
+    position: relative;
+    border-style: none;
+    width: 20px;
+    height: 18px;
+    background-color: transparent;
+    padding: 2px;
+}
+.Buscador{
+    width: 222px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    position: relative;
+    margin: auto;
+}
+.Deporte:hover,.Musica:hover,.Juegos:hover,.Cine:hover,.Ciencia:hover,.Estudio:hover{
 	width: 100px;
 	height: 100px;
 }

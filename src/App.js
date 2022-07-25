@@ -4,7 +4,7 @@ import PantallaOtro from './matcheo/pantalla_otro';
 import Matcheo from './matcheo/pantallaMatcheo.jsx';
 import Busqueda from './matcheo/Busqueda';
 import Etiquetas from './matcheo/Etiquetas';
-
+import protoPerfil from './matcheo/protoPerfil';
 function App() {
   return (   
     <BrowserRouter>
@@ -13,6 +13,7 @@ function App() {
             <Route path='pantalla_otro' element={<PantallaOtro/>}/>
             <Route path='pantallaMatcheo' element={<Matcheo/>}/>
             <Route path='Busqueda' element={<Busqueda/>}/>
+            <Route path='Perfil' element={<protoPerfil/>}/>
           </Routes>
     </BrowserRouter>
   );
