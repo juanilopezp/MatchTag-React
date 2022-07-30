@@ -1,26 +1,27 @@
 import React from "react";
 import './pantalla_otro.css';
 function PantallaOtro(){
+	{/*let btnCambio = document.getElementById('btnPO');
+	btnCambio.addEventListener('click', () =>{
+		btnCambio.innerText = 'Esperando aprobacion';
+	})
+	*/ }
+	
 	return(
-		<><div class="usuarioTop">
-			<h1>Este es mi nombre de usuario</h1>
-			<div class="botones">
-			<input  type="radio" name="control" id="match" />
-			<label for="match" class="matchBtn" name="matchBtn">Matchear</label>
-			<div class="botones2">
-			<input  type="radio" name="control" id="espera" />
-			<label for="espera" class="esperaBtn" name="esperaBtn">Esperar</label>
+	<>
+			<div class="usuarioTop">
+				<h1>Este es mi nombre de usuario</h1>
+				<div class="botones">
+					<button id="btnPO" class="btnMatch"></button>
+				</div>
 			</div>
-		</div>
-		</div>
 		<ul class="usuarioDown">
-		<div class="publicaciones">
-			<slider>
-				
-			</slider>
-		</div>
-		</ul>
-		</>
+				<div class="publicaciones">
+					<slider>
+
+					</slider>
+				</div>
+		</ul></>
 
 	)
 }

@@ -52,6 +52,7 @@ body{
     left: 0;
     margin-top: auto;
     margin-inline: 20px;
+    transition: all 5s;
 }
 .p{
     padding: 15px;
@@ -79,8 +80,35 @@ p{
     text-align: left;
     background-clip: text;
     font-family: 'Kameron';
+
 }
-input[name="busqueda"]{
+section {
+    position: absolute;
+    left: 20rem;
+	display: flex;
+	align-items: center;
+    margin-left: 200px;
+}
+input{
+    font: inherit;
+}
+form > div{
+    display: flex;
+    background:#fff;
+	padding: 9px 22px 9px 26px;
+	border-radius: 30px;
+}
+form input {
+	border:none;
+	background: transparent;
+	font-weight: bold;
+	padding-left: 24px;
+	background-image: url(https://image.flaticon.com/icons/png/512/116/116836.png);
+	background-size: 16px;
+	background-repeat: no-repeat;
+    outline: none;
+}
+/*input[name="busqueda"]{
     border-color: white;
     border-style: none;
     position: relative;
@@ -102,8 +130,24 @@ input[name="busqueda"]{
     background-color: white;
     position: relative;
     margin: auto;
-}
-.Deporte:hover,.Musica:hover,.Juegos:hover,.Cine:hover,.Ciencia:hover,.Estudio:hover{
+}*/
+/*.Deporte:hover,.Musica:hover,.Juegos:hover,.Cine:hover,.Ciencia:hover,.Estudio:hover{
 	width: 100px;
 	height: 100px;
+    transition-delay: width 5s;
+}*/
+#Etiquetas{
+    position: relative;
+    top: 310px;
+    left: auto;
+    margin-top: auto;
+    margin-inline: 20px;
+}
+#Etiquetas:hover{
+    width: 100px;
+	height: 100px;
+}
+.LoginBtn{
+    position: absolute;
+    top: 15rem;
 }
