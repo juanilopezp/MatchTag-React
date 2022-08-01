@@ -1,63 +1,43 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { BrowserRouter , Link} from 'react-router-dom'
 import './Etiquetas.css';
 import lupita from './lupita.png'
-import JSONDATA from './Etiquetas.json'
 function Etiquetas() {
-    /*state = {
-        JSONDATA : [...JSONDATA.map(nomEtiqueta => {return {...nomEtiqueta, selected : false}})]
-      }
+  const data = [{"nomEtiqueta": "Deporte"},
+  {"nomEtiqueta": "Musica"},
+  {"nomEtiqueta": "Juegos"},
+  {"nomEtiqueta": "Cine"},
+  {"nomEtiqueta": "Ciencia"},
+  {"nomEtiqueta": "Estudio"}]
+    /*
       toggleEtiquetaSelect = idx =>{
           const {JSONDATA} = this.state;
           JSONDATA[idx].selected = !JSONDATA[idx].selected;
           this.setState({JSONDATA});
         }
       */      
-     let users = []
-        var text = '<span>seleccionaste: </span>';
-        var listArray = [];
-        var checkboxes = document.querySelectorAll ('.checkbox')
-        console.log(checkboxes);
-        for (var checkbox of checkboxes){
-          checkbox.addEventListener('click', function(){
-            if(this.checked == true){
-              console.log(this.value);
-            }
-          })
-        }
-           
-      const searchInput = document.querySelector("[data-search]")
+
+        //para las checkboxes
+      // userCardTemplate = document.querySelector("[data-user-template]")
+      /*const searchInput = document.("[data-search]")
       searchInput.addEventListener('input', (e) =>{
        const value = e.target.value
-       console.log(users)
-       })
+       })*/
+       //para la barra de busqueda
+         const[searchTerm,]
   return (
      <>
-<div class = 'user-cards'></div>
-<template><button id='Etiquetas'> <input type="checkbox"/> </button></template>
+         {data.map((val, key) =>{
+        return <button id='Etiquetas'>{val.nomEtiqueta} <input type="checkbox"/> </button>
+      })}
       
-      {/*
-      users = JSONDATA.map(user =>{
-        return <button id='Etiquetas'>{user.nomEtiqueta} <input type="checkbox"/> </button>
-      })
-      */
-      }
      <section>
        <form autocomplete="off">
         <div class = "Buscador">
           <input type="text" name="busqueda" placeholder='Buscar Etiqueta' data-search/>
-          {/*<button class="enlace"> </button>*/}
         </div>
        </form>
       </section>
-      {/*<div className='Etiquetas'>
-        <button id='Etiqueta'class="Deporte">Deporte</button>
-        <button id='Etiqueta'class="Musica">Musica</button>
-        <button id='Etiqueta'class="Juegos">Juegos</button>
-        <button id='Etiqueta'class="Cine">Cine</button>
-        <button id='Etiqueta'class="Ciencia">Ciencia</button>
-        <button id='Etiqueta'class="Estudio">Estudio</button>
-    </div>*/}
     <Link to ='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>
       <button class="LoginBtn">YaTa</button>
     </Link>
