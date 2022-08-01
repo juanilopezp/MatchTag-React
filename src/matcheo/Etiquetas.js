@@ -13,7 +13,7 @@ function Etiquetas() {
           this.setState({JSONDATA});
         }
       */      
-     
+     let users = []
         var text = '<span>seleccionaste: </span>';
         var listArray = [];
         var checkboxes = document.querySelectorAll ('.checkbox')
@@ -25,22 +25,22 @@ function Etiquetas() {
             }
           })
         }
-      
-  return (
-     <>
-     {/*
+           
       const searchInput = document.querySelector("[data-search]")
       searchInput.addEventListener('input', (e) =>{
        const value = e.target.value
-       console.log(value)
+       console.log(users)
        })
-      */}
-
+  return (
+     <>
+<div class = 'user-cards'></div>
+<template><button id='Etiquetas'> <input type="checkbox"/> </button></template>
       
-      {
-      JSONDATA.map((val, key) =>{
-        return <button id='Etiquetas'>{val.nomEtiqueta} <input type="checkbox"/> </button>
+      {/*
+      users = JSONDATA.map(user =>{
+        return <button id='Etiquetas'>{user.nomEtiqueta} <input type="checkbox"/> </button>
       })
+      */
       }
      <section>
        <form autocomplete="off">
