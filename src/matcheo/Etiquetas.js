@@ -24,17 +24,23 @@ function Etiquetas() {
        const value = e.target.value
        })*/
        //para la barra de busqueda
-         const[searchTerm,]
+         const[searchTerm, setSearchTerm] = useState('')
   return (
      <>
-         {data.map((val, key) =>{
+         {data.filter((val)=>{
+           if(searchTerm == ""){
+             return val
+           } else if(val.nomEtiqueta.toLowerCase().includes(searchTerm.toLowerCase())){
+             return val
+           }
+         }).map((val, key) =>{
         return <button id='Etiquetas'>{val.nomEtiqueta} <input type="checkbox"/> </button>
       })}
       
      <section>
        <form autocomplete="off">
         <div class = "Buscador">
-          <input type="text" name="busqueda" placeholder='Buscar Etiqueta' data-search/>
+          <input type="text" name="busqueda" placeholder='Buscar Etiqueta' onChange={event =>{setSearchTerm(event.target.value)}} data-search/>
         </div>
        </form>
       </section>
