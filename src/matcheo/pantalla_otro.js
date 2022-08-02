@@ -1,5 +1,6 @@
 import React from "react";
 import './pantalla_otro.css';
+import DataUsu from './Usuarios.json'
 function PantallaOtro(){
 	{/*let btnCambio = document.getElementById('btnPO');
 	btnCambio.addEventListener('click', () =>{
@@ -9,11 +10,18 @@ function PantallaOtro(){
 	
 	return(
 	<>
-			<div class="usuarioTop">
-				<h1>Este es mi nombre de usuario</h1>
+	{DataUsu.map(user =>{
+		return(
+		<div class="usuarioTop">
+				<h1>{user.nomUsuario}</h1>
+				<div> tags: {user.tags}</div>
+		</div>
+		)
+	})}
+			
 				<div class="botones">
 					<button id="btnPO" class="btnMatch"></button>
-				</div>
+				
 			</div>
 		<ul class="usuarioDown">
 				<div class="publicaciones">

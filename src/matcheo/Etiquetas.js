@@ -3,7 +3,7 @@ import { BrowserRouter , Link} from 'react-router-dom'
 import './Etiquetas.css';
 import lupita from './lupita.png'
 function Etiquetas() {
-  const data = [{"nomEtiqueta": "Deporte"},
+  const dataE = [{"nomEtiqueta": "Deporte"},
   {"nomEtiqueta": "Musica"},
   {"nomEtiqueta": "Juegos"},
   {"nomEtiqueta": "Cine"},
@@ -27,7 +27,7 @@ function Etiquetas() {
          const[searchTerm, setSearchTerm] = useState('')
   return (
      <>
-         {data.filter((val)=>{
+         {dataE.filter((val)=>{
            if(searchTerm == ""){
              return val
            } else if(val.nomEtiqueta.toLowerCase().includes(searchTerm.toLowerCase())){

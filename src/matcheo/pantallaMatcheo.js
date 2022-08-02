@@ -3,6 +3,7 @@ import img from './messiPer.jpg';
 import './pantallaMatcheo.css';
 import App from "../App";
 import {Route, Link} from "react-router-dom";
+import DataUsu from './Usuarios.json';
 function Matcheo(){
     return(
         <>
