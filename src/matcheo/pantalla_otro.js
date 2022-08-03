@@ -21,7 +21,7 @@ function PantallaOtro(){
 	})}
 			
 				<div class="botones">
-					<button id="btnPO" class="btnMatch"></button>
+					<button id="btnPO" class="btnMatch" ></button>
 				
 			</div>
 		<ul class="usuarioDown">

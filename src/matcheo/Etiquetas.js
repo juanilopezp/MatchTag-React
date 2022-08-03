@@ -25,6 +25,9 @@ function Etiquetas() {
        })*/
        //para la barra de busqueda
          const[searchTerm, setSearchTerm] = useState('')
+         var botom = document.getElementsByClassName('LoginBtn');
+         var checks = document.getElementsByClassName('checkbox');
+         botom.addEvent
   return (
      <>
          {dataE.filter((val)=>{
@@ -34,7 +37,7 @@ function Etiquetas() {
              return val
            }
          }).map((val, key) =>{
-        return <button id='Etiquetas'>{val.nomEtiqueta} <input type="checkbox"/> </button>
+        return <button id='Etiquetas'>{val.nomEtiqueta} <input type="checkbox" className="checkbox"/> </button>
       })}
       
      <section>
@@ -44,9 +47,9 @@ function Etiquetas() {
         </div>
        </form>
       </section>
-    <Link to ='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>
-      <button class="LoginBtn">YaTa</button>
-    </Link>
+    
+      <button className="LoginBtn">YaTa</button>
+    
     <div class='p'>
     </div>
     <p>Encuentra el Tag perfecto para vos</p>
