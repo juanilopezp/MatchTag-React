@@ -25,9 +25,11 @@ function Etiquetas() {
        })*/
        //para la barra de busqueda
          const[searchTerm, setSearchTerm] = useState('')
-         var botom = document.getElementsByClassName('LoginBtn');
-         var checks = document.getElementsByClassName('checkbox');
-         botom.addEvent
+         const[checkbox, setcheckbox] = useState(true)
+         const handleChange = (data) =>{
+           console.log(data)
+         }
+
   return (
      <>
          {dataE.filter((val)=>{
@@ -37,7 +39,7 @@ function Etiquetas() {
              return val
            }
          }).map((val, key) =>{
-        return <button id='Etiquetas'>{val.nomEtiqueta} <input type="checkbox" className="checkbox"/> </button>
+        return <button id='Etiquetas'>{val.nomEtiqueta} <input type="checkbox" className="checkbox" value={checkbox} onChange={()=>handleChange("checkbox")}/> </button>
       })}
       
      <section>
