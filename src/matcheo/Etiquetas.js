@@ -28,7 +28,7 @@ function Etiquetas() {
   return (
      <>
          {dataE.filter((val)=>{
-           if(searchTerm == ""){
+           if(searchTerm === ""){
              return val
            } else if(val.nomEtiqueta.toLowerCase().includes(searchTerm.toLowerCase())){
              return val

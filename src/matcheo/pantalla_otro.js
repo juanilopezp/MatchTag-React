@@ -15,6 +15,7 @@ function PantallaOtro(){
 		<div class="usuarioTop">
 				<h1>{user.nomUsuario}</h1>
 				<div> tags: {user.tags}</div>
+				<img src={user.phPerfil} alt= ""/> 
 		</div>
 		)
 	})}
