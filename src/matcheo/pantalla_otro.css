@@ -11,4 +11,5 @@ body{
     height: 80px;
     position: absolute;
     z-index: 5;
+    background-image: url('addBro.png');
 }
