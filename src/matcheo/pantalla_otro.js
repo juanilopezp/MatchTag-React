@@ -7,7 +7,8 @@ function PantallaOtro(){
 		btnCambio.innerText = 'Esperando aprobacion';
 	})
 	*/ }
-	
+	let btnMatcheo = document.getElementById('btnMatch')
+	btnMatcheo.addEventListener('click', function(btnMatch) {btnMatcheo.target.classList.toggle = 'btnEspera'})
 	return(
 	<>
 	{DataUsu.map(user =>{
@@ -21,7 +22,8 @@ function PantallaOtro(){
 	})}
 			
 				<div class="botones">
-					<button id="btnMatch"></button>
+					<button id="btnMatch">seguir</button>
+					<button id="btnEspera">siguiendo</button>
 				</div>
 		<ul class="usuarioDown">
 				<div class="publicaciones">
