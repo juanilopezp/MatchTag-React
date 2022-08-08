@@ -1,3 +1,7 @@
+img {
+    width: 10rem;
+    height: 10rem;
+}
 html{
     height: 100%;   
 }
@@ -11,4 +15,14 @@ body{
     height: 80px;
     position: absolute;
     z-index: 5;
+}
+.tags{
+    position: relative;
+    width: 12rem;
+    height: 6rem;
+    background-color: #777;
+    
+}
+.usuarioLeft{
+    border-right: 0.2rem black solid;
 }
