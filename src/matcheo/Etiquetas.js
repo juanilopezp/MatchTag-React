@@ -29,7 +29,7 @@ function Etiquetas() {
          const handleChange = (data) =>{
            console.log(data)
          }
-
+//CAPAZ PUEDO HACER LOS BOTONES FUNCIONAR, SI HAGO QUE CADA VEZ QUE SE APRETE EL BOTON SE CHEQUEE LA CHECKBOX
   return (
      <>
          {dataE.filter((val)=>{

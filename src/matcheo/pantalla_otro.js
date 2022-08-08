@@ -7,8 +7,8 @@ function PantallaOtro(){
 		btnCambio.innerText = 'Esperando aprobacion';
 	})
 	*/ }
-	let btnMatcheo = document.getElementById('btnMatch')
-	btnMatcheo.addEventListener('click', function(btnMatcheo) {btnMatcheo.innerText = 'perando'})
+	//let btnMatcheo = document.getElementById('btnMatch')
+	//btnMatcheo.addEventListener('click', function(btnMatcheo) {btnMatcheo.innerText = 'perando'})
 	return(
 	<>
 	{DataUsu.map(user =>{
@@ -16,7 +16,7 @@ function PantallaOtro(){
 		<div class="usuarioTop">
 				<h1>{user.nomUsuario}</h1>
 				<div> tags: {user.tags}</div>
-				<img src={user.phPerfil} alt= ""/> 
+				<img src={user.phPerfil}/> 
 		</div>
 		)
 	})}
