@@ -12,25 +12,27 @@ function PantallaOtro() {
 		<>
 			{DataUsu.map(user => {
 				return (
-					<div class="usuarioLeft">
+					<><div class="usuarioLeft">
+						<img class = 'phPerfil' src={user.phPerfil} />
 						<h1>{user.nomUsuario}</h1>
-						<div class='tags'> tags: {user.tags}</div>
-						<img src={user.phPerfil} />
 						<div class="botones">
 							<button id="btnMatch" onClick={(e) => e.target.innerText = (e.target.innerText === "Siguiendo" ? "Seguir" : 'Siguiendo')}>Seguir</button>
 						</div>
+						<div class='tags'> tags: {user.tags}</div>
+						
 					</div>
+					<ul class="usuarioRight">
+						<div class="publicaciones">
+							<slider>
+								{user.publicaciones}
+							</slider>
+						</div>
+					</ul></>
 				)
 			})}
 
 
-			<ul class="usuarioRight">
-				<div class="publicaciones">
-					<slider>
-
-					</slider>
-				</div>
-			</ul></>
+</>
 	)
 }
 export default PantallaOtro

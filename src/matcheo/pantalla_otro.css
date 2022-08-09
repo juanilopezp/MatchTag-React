@@ -1,13 +1,10 @@
-img {
-    width: 10rem;
-    height: 10rem;
-}
+
 html{
     height: 100%;   
 }
 body{
     height: 100%;
-    background: #d9d9d9;
+    background: linear-gradient(180deg, rgba(5, 187, 143, 0.13) 6.07%, rgba(255, 13, 71, 0.25) 106.07%);
     background-repeat: no-repeat;    
 }
 .btnMatch{
@@ -24,5 +21,22 @@ body{
     
 }
 .usuarioLeft{
+    height: 100%;
+    width: 50%;
+    margin: 0;
     border-right: 0.2rem black solid;
+    text-align: center;
+}
+.usuarioRight{
+    height: 100%;
+    width: 50%;
+}
+.publicaciones{
+    border: black 1px solid;
+}
+.phPerfil {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    border: #f0a 0.5rem solid;
 }
