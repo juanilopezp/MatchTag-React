@@ -1,4 +1,3 @@
-
 html{
     height: 100%;   
 }
@@ -6,6 +5,7 @@ body{
     height: 100%;
     background: linear-gradient(180deg, rgba(5, 187, 143, 0.13) 6.07%, rgba(255, 13, 71, 0.25) 106.07%);
     background-repeat: no-repeat;    
+    
 }
 .btnMatch{
     width: 120px;
@@ -13,23 +13,35 @@ body{
     position: absolute;
     z-index: 5;
 }
+.tags-container{
+    background-color: grey;
+}
 .tags{
-    position: relative;
-    width: 12rem;
-    height: 6rem;
-    background-color: #777;
-    
+    background-color: red;
+    color: blue;   
+    display: flex;
+    margin: 5px;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
 }
 .usuarioLeft{
-    height: 100%;
-    width: 50%;
-    margin: 0;
+    position: absolute;
+    height: 100vh;
+    width: 40vw;
+    display: flex;
     border-right: 0.2rem black solid;
-    text-align: center;
+    flex-direction: column;
+    align-items: center;
 }
 .usuarioRight{
-    height: 100%;
-    width: 50%;
+    position: absolute;
+    height: 100vh;
+    width: 60vw;
+    left: 40%;
+    display: flex;
+    flex-direction: column;
 }
 .publicaciones{
     border: black 1px solid;
