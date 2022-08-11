@@ -1,3 +1,10 @@
 body{
     background: linear-gradient(180deg, rgba(15, 197, 197, 0.5) -28.36%, rgba(85, 4, 99, 0.495) 55.49%);
 }
+
+.Buscador{
+    width: 25vw;
+}
+.busUsu{
+    align-items: center;
+}
