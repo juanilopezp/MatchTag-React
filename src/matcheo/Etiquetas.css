@@ -56,10 +56,10 @@ body{
 }
 .p{
     padding: 15px;
-    height: 543px;
-    width: 618px;
-    left: -217px;
-    top: -314px;
+    height: 81vh;
+    width: 80vw;
+    left: -21vw;
+    top: -38vh;
     border-radius: 50%;
     position: absolute;
     background-color: #908E8D;
@@ -138,7 +138,7 @@ form input {
 }*/
 #Etiquetas{
     position: relative;
-    top: 310px;
+    top: 60vh;
     left: auto;
     margin-top: auto;
     margin-inline: 20px;
