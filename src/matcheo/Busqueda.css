@@ -5,6 +5,22 @@ body{
 .Buscador{
     width: 25vw;
 }
-.busUsu{
-    align-items: center;
+.usu-container{
+    position: relative;
+    height: 8vh;
+    width: 60vw;
+    background: rgba(255, 255, 255, 0.19);
+}
+.nomUsuarios{
+    position: relative;
+    background-color: transparent;
+    border-color: transparent;
+    top: -5%;
+}
+.imgPerfil{
+    height: 6vh;
+    width: 4vw;
+    border-radius: 50%;
+    position: relative;
+    top: 15%;
 }

@@ -23,7 +23,10 @@ function Busqueda(){
               return val
             }
           }).map((val, key) =>{
-         return <button id='busUsu' class='Usuarios'>{val.nomUsuario}  </button>
+         return <div class = 'usu-container'>
+                  <img class='imgPerfil' src={val.phPerfil}/>
+                  <button id='busUsu' class='nomUsuarios'>{val.nomUsuario}</button>
+                </div>
        })}</>
     );
 }
