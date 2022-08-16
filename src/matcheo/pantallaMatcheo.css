@@ -3,7 +3,8 @@ body{
 }
 .top-matcheo{
     display: flex;
-    margin: auto;
+    justify-content: center;
+    padding-top: 8%;
 }
 .fotomatch-container{
     width: 150px;

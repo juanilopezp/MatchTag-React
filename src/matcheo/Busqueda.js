@@ -23,9 +23,14 @@ function Busqueda(){
               return val
             }
           }).map((val, key) =>{
-         return <div class = 'usu-container'>
-                  <img class='imgPerfil' src={val.phPerfil}/>
-                  <button id='busUsu' class='nomUsuarios'>{val.nomUsuario}</button>
+         return <div class='container-container'>
+                  <button class = 'container'>
+                    <div class='usu-container'>
+                      <img class='imgPerfil' src={val.phPerfil}/>
+                      <label class='nomUsuarios'>{val.nomUsuario}</label>
+                    </div>
+                    <button class='agregarAmigo' onClick={(e) => e.target.innerText = (e.target.innerText === "Siguiendo" ? "Seguir" : 'Siguiendo')}>Seguir</button>
+                  </button>
                 </div>
        })}</>
     );

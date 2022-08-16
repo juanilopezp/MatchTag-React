@@ -5,17 +5,28 @@ body{
 .Buscador{
     width: 25vw;
 }
-.usu-container{
+.container-container{
+    margin-top: 8vh;
+}
+.container{
+    margin-bottom: 3vh;
     position: relative;
     height: 8vh;
     width: 60vw;
     background: rgba(255, 255, 255, 0.19);
 }
+.usu-container{
+    display: table;
+    top: .5vh;
+    position: absolute;
+    
+}
 .nomUsuarios{
-    position: relative;
+    display: table-cell;
+    vertical-align: middle;
     background-color: transparent;
     border-color: transparent;
-    top: -5%;
+    padding-left: 1vw;
 }
 .imgPerfil{
     height: 6vh;
@@ -23,4 +34,9 @@ body{
     border-radius: 50%;
     position: relative;
     top: 15%;
+}
+.agregarAmigo{
+    position: absolute;
+    top: 37%;
+    left: 85%;
 }
