@@ -7,7 +7,7 @@ import DataUsu from './Usuarios.json';
 function Matcheo(){
     return(
         <>
-            <center>
+            
                 {/*<div className="usus">
                     {usuario.map(usuario =>(
                         <div className="tarjeta">
@@ -17,18 +17,22 @@ function Matcheo(){
                     ))}
                 </div>
                 */}
-                
-                <div class='fotoMatch'>
-                    <img src={img} />
-                     <Link class = 'hoverFotoMatch' to='/pantalla_otro'>
-                        Perfil
-                     </Link>
-                    <label class='nomUsuario'>Leo Messi</label>
+                <div class="top-matcheo">
+                    {DataUsu.map((a, index)=>{
+                        return( 
+                        <div class = 'fotomatch-container'>
+                            <div class='fotoMatch'>
+                            <img src={a.phPerfil} />
+                            <Link class = 'hoverFotoMatch' to='/pantalla_otro'>
+                                Perfil
+                            </Link>
+                        </div>
+                        <label class='nomUsuario'>{a.nomUsuario}</label> </div>)
+                    })}
+                    <button class='agregarM'></button>
+                    <label class='tagSim'></label>
                 </div>
-                <button class='agregarM'></button>
-                <label class='tagSim'></label>
-                
-            </center>
+ 
         </>          
         /*react router navigate*/
     );

@@ -1,6 +1,16 @@
 body{
     background: linear-gradient(180deg, rgba(0, 249, 249, 0.3192) -22.33%, rgba(89, 7, 102, 0.3192) 75.59%);
 }
+.top-matcheo{
+    display: flex;
+    margin: auto;
+}
+.fotomatch-container{
+    width: 150px;
+    height: 171px;
+    padding-right: 50px;
+    text-align: center;
+}
 .fotoMatch{
     width: 150px;
     height: 150px;
@@ -9,7 +19,6 @@ body{
     align-items: center;
     overflow: hidden;
     border-radius: 50%;
-    margin: auto;
 }
 img{
     width: 100%;
@@ -20,15 +29,14 @@ img{
     position: absolute;
     width: 100%;
     height: 100%;
-    text-align: center;
     opacity: 0;
+    text-align: center;
 }
 
 .hoverFotoMatch:hover{
     opacity: .5;
 }
 .agregarM{
-    position: relative;
     width: 169px;
     height: 150px;
     background: url('pngegg (3) 1.png');
