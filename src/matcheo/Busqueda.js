@@ -24,7 +24,7 @@ function Busqueda(){
             }
           }).map((val, key) =>{
          return <div class='container-container'>
-                  <button class = 'container'>
+                  <button class = 'b-container'>
                     <div class='usu-container'>
                       <img class='imgPerfil' src={val.phPerfil}/>
                       <label class='nomUsuarios'>{val.nomUsuario}</label>
