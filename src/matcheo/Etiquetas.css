@@ -9,12 +9,12 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-.p{
+.circle{
     padding: 15px;
-    height: 81vh;
-    width: 80vw;
-    left: -21vw;
-    top: -38vh;
+    height: 100vh;
+    width: 56.4vw;
+    left: -19vw;
+    top: -57vh;
     border-radius: 50%;
     position: absolute;
     background-color: #908E8D;
@@ -25,13 +25,14 @@ body{
 p{
     color: white;
     position: absolute;
-    height: 150px;
-    width: 250px;
+    height: 6.29vh;
+    width: 400px;
     top: 0px;
+    margin-top: 5vh;
     left: 43px;
     font-style: normal;
-    font-size: 45px;
-    line-height: 44px;
+    font-size: 60px;
+    line-height: 11.43vh;
     text-align: left;
     background-clip: text;
     font-family: 'Kameron';
@@ -39,10 +40,9 @@ p{
 }
 section {
     position: absolute;
-    left: 20rem;
+    left: 40vw;
 	display: flex;
 	align-items: center;
-    margin-left: 200px;
 }
 input{
     font: inherit;

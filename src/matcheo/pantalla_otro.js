@@ -12,13 +12,13 @@ function PantallaOtro() {
 	//const toggler = () =>{
 	//	toggle ? setToggle(false):setToggle(true)
 	//}
-	let val = 0
-	if(e.target.innerText == "Siguiendo"){
-		val = 1;
-	}
-	else {
-		val = 0;
-	}
+	//let val = 0
+	//if(e.target.innerText == "Siguiendo"){
+	//	val = 1;
+	//}
+	//else {
+	//	val = 0;
+	//}
 	return (
 		
 		

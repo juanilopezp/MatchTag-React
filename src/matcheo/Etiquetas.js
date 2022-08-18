@@ -52,7 +52,7 @@ function Etiquetas() {
     
       <button className="LoginBtn">YaTa</button>
     
-    <div class='p'>
+    <div class='circle'>
     </div>
     <p>Encuentra el Tag perfecto para vos</p>
     </>
