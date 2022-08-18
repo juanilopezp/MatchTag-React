@@ -6,9 +6,6 @@ import Etiquetas from './matcheo/Etiquetas';
 function App() {
   return (
     <>
-    <header>
-      <h1>MESHEEE</h1>
-    </header>
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Etiquetas />} />
@@ -16,7 +13,11 @@ function App() {
         <Route path='pantallaMatcheo' element={<Matcheo />} />
         <Route path='Busqueda' element={<Busqueda />} />
       </Routes>
-    </BrowserRouter></>
+    </BrowserRouter>
+    <header>
+      <Link to='/pantalla_otro'></Link>
+    </header>
+    </>
   );
 }
 

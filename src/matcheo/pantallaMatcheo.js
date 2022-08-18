@@ -29,8 +29,17 @@ function Matcheo(){
                         </div>
                         <label class='nomUsuario'>{a.nomUsuario}</label> </div>)
                     })}
-                    <button class='agregarM'></button>
-                    <label class='tagSim'></label>
+                    <div class = 'agregarM-container'>
+                        <button class='agregarM'></button>
+                        <Link class = 'child-link' to = '/pantalla_otro'></Link>
+                    </div>
+                    
+                    
+                </div>
+                <div class='labels-container'>
+                    <label class='tagSim'>
+                        
+                    </label>
                 </div>
  
         </>          
