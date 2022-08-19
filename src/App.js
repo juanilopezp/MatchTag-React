@@ -14,9 +14,6 @@ function App() {
         <Route path='Busqueda' element={<Busqueda />} />
       </Routes>
     </BrowserRouter>
-    <header>
-      <Link to='/pantalla_otro'></Link>
-    </header>
     </>
   );
 }
