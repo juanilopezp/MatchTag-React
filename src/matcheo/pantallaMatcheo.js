@@ -41,6 +41,12 @@ function Matcheo(){
                         
                     </label>
                 </div>
+                <button class ='btnIzq'>
+
+                </button>
+                <button class='btnDer'>
+                    
+                </button>
  
         </>          
         /*react router navigate*/
