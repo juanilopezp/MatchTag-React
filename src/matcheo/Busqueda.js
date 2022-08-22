@@ -24,7 +24,7 @@ function Busqueda(){
             }
           }).map((val, key) =>{
          return <div class='container-container'>
-                  <button class = 'b-container'>
+                  <button class = 'b-container'onClick={(e)=>{window.location.pathname='pantalla_otro'}}>
                     <div class='usu-container'>
                       <img class='imgPerfil' src={val.phPerfil}/>
                       <label class='nomUsuarios'>{val.nomUsuario}</label>

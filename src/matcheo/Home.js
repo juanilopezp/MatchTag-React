@@ -1,5 +1,6 @@
 import React from 'react'
 import {NavLink} from 'react-router-dom'
+import './Home.css';
 function Home() {
   return (
   <nav>
@@ -12,6 +13,9 @@ function Home() {
     <NavLink to={'Busqueda'}>
       Buscar
     </NavLink>
+    <button class='logo-matchtag' onClick={(e)=>{window.location.pathname='/'}}>
+      MatchTag
+    </button>
   </nav>
 
   )

@@ -5,6 +5,7 @@ import App from "../App";
 import {Route, Link} from "react-router-dom";
 import DataUsu from './Usuarios.json';
 function Matcheo(){
+    const [siguiendo, setSiguiendo] = useState(false);
     return(
         <>
             
@@ -31,7 +32,7 @@ function Matcheo(){
                         </div>)
                     })}
                     <div class = 'agregarM-container'>
-                        <button class='agregarM'></button>
+                        <button class='agregarM' onClick={() => setSiguiendo(s => !s)}></button>
                         <Link class = 'child-link' to = '/pantalla_otro'></Link>
                     </div>
                     

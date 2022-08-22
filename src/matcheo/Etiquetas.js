@@ -8,26 +8,13 @@ function Etiquetas() {
   {"nomEtiqueta": "Cine"},
   {"nomEtiqueta": "Ciencia"},
   {"nomEtiqueta": "Estudio"}]
-    /*
-      toggleEtiquetaSelect = idx =>{
-          const {JSONDATA} = this.state;
-          JSONDATA[idx].selected = !JSONDATA[idx].selected;
-          this.setState({JSONDATA});
+      const[searchTerm, setSearchTerm] = useState('')
+      const[Yeah, setYeah] = useState(true)
+      const handleChange = (data) =>{
+        console.log(data)
         }
-      */      
-
-        //para las checkboxes
-      // userCardTemplate = document.querySelector("[data-user-template]")
-      /*const searchInput = document.("[data-search]")
-      searchInput.addEventListener('input', (e) =>{
-       const value = e.target.value
-       })*/
-       //para la barra de busqueda
-         const[searchTerm, setSearchTerm] = useState('')
-         const[checkbox, setcheckbox] = useState(true)
-         const handleChange = (data) =>{
-           console.log(data)
-         }
+        
+      
 //CAPAZ PUEDO HACER LOS BOTONES FUNCIONAR, SI HAGO QUE CADA VEZ QUE SE APRETE EL BOTON SE CHEQUEE LA CHECKBOX
   return (
      <>
@@ -38,7 +25,7 @@ function Etiquetas() {
              return val
            }
          }).map((val, key) =>{
-        return <button id='Etiquetas'>{val.nomEtiqueta} <input type="checkbox" className="checkbox" value={checkbox} onChange={()=>handleChange("checkbox")}/> </button>
+        return <button id='Etiquetas' onClick={()=> setYeah(y => !y)}>{val.nomEtiqueta} </button>
       })}
       
      <section>
@@ -49,9 +36,8 @@ function Etiquetas() {
        </form>
       </section>
     
-      <button className="LoginBtn">
+      <button className="LoginBtn" onClick={(e)=>{window.location.pathname='/'}}>
         Continuar
-        <Link class ='link-home' to={'/'}></Link>
       </button>
     
     <div class='circle'>
