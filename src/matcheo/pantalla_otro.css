@@ -43,8 +43,24 @@ body{
     display: flex;
     flex-direction: column;
 }
+.publicaciones-container{
+    position: absolute;
+    width: 30vw;
+    height: 56.6vh;
+    top: 15%;
+    left: 5%;
+}
 .publicaciones{
-    border: black 1px solid;
+    width: 25vw;
+    height: 55vh;
+    border: 5px solid;
+    border-color: linear-gradient(180deg, rgba(255, 0, 0, 0.19) 0%, rgba(0, 26, 255, 0.19) 100%);;
+    border-radius: 10%;
+}
+.comentarios{
+    width: 20vw;
+    height: 56vh;
+    background-color: aliceblue;
 }
 .phPerfil {
     width: 15rem;

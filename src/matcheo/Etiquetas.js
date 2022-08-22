@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import { BrowserRouter , Link} from 'react-router-dom'
 import './Etiquetas.css';
-import lupita from './lupita.png'
 function Etiquetas() {
   const dataE = [{"nomEtiqueta": "Deporte"},
   {"nomEtiqueta": "Musica"},
@@ -50,7 +49,10 @@ function Etiquetas() {
        </form>
       </section>
     
-      <button className="LoginBtn">YaTa</button>
+      <button className="LoginBtn">
+        Continuar
+        <Link class ='link-home' to={'/'}></Link>
+      </button>
     
     <div class='circle'>
     </div>

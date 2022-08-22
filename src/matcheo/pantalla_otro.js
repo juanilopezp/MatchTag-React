@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import './pantalla_otro.css';
 import DataUsu from './Usuarios.json'
 import { useRef, useEffect } from 'react';
+import { motion } from 'framer-motion';
 function PantallaOtro() {
 	{/*let btnCambio = document.getElementById('btnPO');
 	btnCambio.addEventListener('click', () =>{
@@ -39,11 +40,11 @@ function PantallaOtro() {
 							</div>						
 						</div>
 						<div class="usuarioRight">
-							<div class="publicaciones">
-								<slider>
-									{user.publicaciones}
-								</slider>
-							</div>
+							<h1>Publicaciones</h1>
+							<motion.div class="publicaciones-container" drag='y'>
+								<img class ='publicaciones'src={user.publicaciones}/>
+								<div class='comentarios'></div>
+							</motion.div>
 						</div>
 					</div></>
 				)

@@ -22,12 +22,13 @@ function Matcheo(){
                         return( 
                         <div class = 'fotomatch-container'>
                             <div class='fotoMatch'>
-                            <img src={a.phPerfil} />
-                            <Link class = 'hoverFotoMatch' to='/pantalla_otro'>
-                                Perfil
-                            </Link>
-                        </div>
-                        <label class='nomUsuario'>{a.nomUsuario}</label> </div>)
+                                <img src={a.phPerfil} />
+                                <Link class = 'hoverFotoMatch' to='/pantalla_otro'>
+                                   Perfil
+                                </Link>
+                            </div>
+                            <label class='nomUsuario'>{a.nomUsuario}</label> 
+                        </div>)
                     })}
                     <div class = 'agregarM-container'>
                         <button class='agregarM'></button>
