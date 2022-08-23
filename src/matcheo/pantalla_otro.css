@@ -44,8 +44,9 @@ body{
     flex-direction: column;
 }
 .publicaciones-container{
-    position: absolute;
-    width: 30vw;
+    position: relative;
+    display: flex;
+    width: 50vw;
     height: 56.6vh;
     top: 15%;
     left: 5%;
@@ -58,6 +59,8 @@ body{
     border-radius: 10%;
 }
 .comentarios{
+    position: absolute;
+    left: 30vw;
     width: 20vw;
     height: 56vh;
     background-color: aliceblue;

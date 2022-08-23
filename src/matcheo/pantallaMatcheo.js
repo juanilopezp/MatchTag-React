@@ -18,36 +18,34 @@ function Matcheo(){
                     ))}
                 </div>
                 */}
-                <div class="top-matcheo">
+                
                     {DataUsu.map((a, index)=>{
                         return( 
-                        <div class = 'fotomatch-container'>
-                            <div class='fotoMatch'>
-                                <img src={a.phPerfil} />
-                                <Link class = 'hoverFotoMatch' to='/pantalla_otro'>
-                                   Perfil
-                                </Link>
-                            </div>
-                            <label class='nomUsuario'>{a.nomUsuario}</label> 
-                        </div>)
+                        <>
+                        <div class="top-matcheo">
+                                <div class='fotomatch-container'>
+                                    <div class='fotoMatch'>
+                                        <img src={a.phPerfil} />
+                                        <Link class='hoverFotoMatch' to='/pantalla_otro'>
+                                            Perfil
+                                        </Link>
+                                    </div>
+                                    <label class='nomUsuario'>{a.nomUsuario}</label>
+                                </div>
+                                <div class='agregarM-container'>
+                                    <button class='agregarM' onClick={() => setSiguiendo(s => !s)}></button>
+                                    <Link class='child-link' to='/pantalla_otro'></Link>
+                                </div>
+                            </div><div class='labels-container'>
+                                    <label class='tagSim'>
+                                        {a.tags}
+                                    </label>
+                                </div></>)
                     })}
-                    <div class = 'agregarM-container'>
-                        <button class='agregarM' onClick={() => setSiguiendo(s => !s)}></button>
-                        <Link class = 'child-link' to = '/pantalla_otro'></Link>
-                    </div>
-                    
-                    
-                </div>
-                <div class='labels-container'>
-                    <label class='tagSim'>
-                        
-                    </label>
-                </div>
+                
                 <button class ='btnIzq'>
-
                 </button>
                 <button class='btnDer'>
-                    
                 </button>
  
         </>          

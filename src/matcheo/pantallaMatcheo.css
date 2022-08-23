@@ -57,8 +57,31 @@ img{
     height: 100%;
 }
 .labels-container{
+    position: absolute;
+    left: 30%;
     width: 40vw;
     height: 40vh;
     border-radius: 10%;
     background-color: #ddd;
+}
+.btnIzq{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    width: 5vw;
+    height: 5vh;
+}
+.btnDer{
+    position: absolute;
+    top: 50%;
+    left: 95%;
+    width: 5vw;
+    height: 5vh;
+}
+.tagSim{
+    position: absolute;
+    width: 25%;
+    height: 8%;
+    background-color: black;
+    color: white;
 }

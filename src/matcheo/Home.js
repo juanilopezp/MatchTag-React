@@ -1,22 +1,26 @@
 import React from 'react'
 import {NavLink} from 'react-router-dom'
 import './Home.css';
+import SideNav, { Toggle, Nav, NavItem, NavIcon, NavText } from '@trendmicro/react-sidenav'
 function Home() {
   return (
-  <nav>
-    <NavLink to={'pantalla_otro'}>
-      Perfil
-    </NavLink>
-    <NavLink to={''}>
-      Publicar
-    </NavLink>
-    <NavLink to={'Busqueda'}>
-      Buscar
-    </NavLink>
-    <button class='logo-matchtag' onClick={(e)=>{window.location.pathname='/'}}>
+  <><SideNav>
+      <NavItem to={'pantalla_otro'}>
+        <NavText>
+          Perfil
+        </NavText>
+      </NavItem>
+      <NavLink to={''}>
+        Publicar
+      </NavLink>
+      <NavLink to={'Busqueda'}>
+        Buscar
+      </NavLink>
+    </SideNav>
+    <button class='logo-matchtag' onClick={(e) => { window.location.pathname = '/'; } }>
       MatchTag
     </button>
-  </nav>
+  </>
 
   )
 }
