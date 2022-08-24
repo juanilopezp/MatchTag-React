@@ -4,7 +4,13 @@ import './Home.css';
 import SideNav, { Toggle, Nav, NavItem, NavIcon, NavText } from '@trendmicro/react-sidenav'
 function Home() {
   return (
-  <><SideNav>
+  <>
+  <nav>
+    <button class='logo-matchtag' onClick={(e) => { window.location.pathname = '/'; } }>
+      MatchTag
+    </button>
+  
+  <SideNav>
       <NavItem to={'pantalla_otro'}>
         <NavText>
           Perfil
@@ -17,9 +23,7 @@ function Home() {
         Buscar
       </NavLink>
     </SideNav>
-    <button class='logo-matchtag' onClick={(e) => { window.location.pathname = '/'; } }>
-      MatchTag
-    </button>
+   </nav>
   </>
 
   )
