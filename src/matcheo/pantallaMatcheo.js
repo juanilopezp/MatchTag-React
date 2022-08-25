@@ -8,19 +8,47 @@ function Matcheo(){
     const [siguiendo, setSiguiendo] = useState(false);
     const Cheshire = ({children}) => {
         const slides = useMemo(() => {
-            if(children.lenght >1){
-                let items = Children.map(children,(child, index) =>)
+            if(children.lenght > 1){
+                let items = Children.map(children,(child, index) => (
+                    <li key={index}>
+                        {child}
+                    </li>
+                ))
+                return [
+                    <li key={children.lenght + 1}>
+                        {children[children.lenght - 1]}
+                    </li>,
+                    ...items,
+                    <li key={children.lenght + 2}>
+                        {children[0]}
+                    </li>
+                ];
             }
+            return <li>{children[0]}</li>
         }, [children])
-        return <div id = 'user-render' class='fotomatch-container'>
-        <div class='fotoMatch'>
-            <img src={DataUsu.phPerfil} />
-            <Link class='hoverFotoMatch' to='/pantalla_otro'>
-                Perfil
-            </Link>
-        </div>
-        <label class='nomUsuario'>{DataUsu.nomUsuario}</label>
-    </div>
+        return(
+            <>
+            <div class="top-matcheo">
+                            
+                                <div id = 'user-render' class='fotomatch-container'>
+                                    <div class='fotoMatch'>
+                                        {slides}
+                                        <Link class='hoverFotoMatch' to='/pantalla_otro'>
+                                            Perfil
+                                        </Link>
+                                    </div>
+                                    {slides}
+                                </div>
+                            <div class='agregarM-container'>
+                                <button class='agregarM' onClick={() => setSiguiendo(s => !s)}></button>
+                                <Link class='child-link' to='/pantalla_otro'></Link>
+                            </div>
+                        </div>
+                            <div id = 'user-render'class='labels-container'>
+                                {slides}
+                            </div>
+                            </>
+        )
     }
     return(
         <>
@@ -38,18 +66,13 @@ function Matcheo(){
                     {DataUsu.map((a, index)=>{
                         return( 
                         <>
-                        <div class="top-matcheo">
-                            
-                            <div class='agregarM-container'>
-                                <button class='agregarM' onClick={() => setSiguiendo(s => !s)}></button>
-                                <Link class='child-link' to='/pantalla_otro'></Link>
-                            </div>
-                        </div>
-                            <div id = 'user-render'class='labels-container'>
-                                <label class='tagSim'>
+                        <Cheshire>
+                            <img src={a.phPerfil} />
+                            <label class='nomUsuario'>{a.nomUsuario}</label>
+                            <label class='tagSim'>
                                     {a.tags}
-                                </label>
-                            </div>
+                            </label>
+                        </Cheshire>
                             </>
                             )
                     })}
