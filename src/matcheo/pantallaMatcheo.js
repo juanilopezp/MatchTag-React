@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo, Children } from "react";
 import img from './messiPer.jpg';
 import './pantallaMatcheo.css';
 import App from "../App";
@@ -6,6 +6,22 @@ import {Route, Link} from "react-router-dom";
 import DataUsu from './Usuarios.json';
 function Matcheo(){
     const [siguiendo, setSiguiendo] = useState(false);
+    const Cheshire = ({children}) => {
+        const slides = useMemo(() => {
+            if(children.lenght >1){
+                let items = Children.map(children,(child, index) =>)
+            }
+        }, [children])
+        return <div id = 'user-render' class='fotomatch-container'>
+        <div class='fotoMatch'>
+            <img src={DataUsu.phPerfil} />
+            <Link class='hoverFotoMatch' to='/pantalla_otro'>
+                Perfil
+            </Link>
+        </div>
+        <label class='nomUsuario'>{DataUsu.nomUsuario}</label>
+    </div>
+    }
     return(
         <>
             
@@ -23,15 +39,7 @@ function Matcheo(){
                         return( 
                         <>
                         <div class="top-matcheo">
-                            <div id = 'user-render' class='fotomatch-container'>
-                                <div class='fotoMatch'>
-                                    <img src={a.phPerfil} />
-                                    <Link class='hoverFotoMatch' to='/pantalla_otro'>
-                                        Perfil
-                                    </Link>
-                                </div>
-                                <label class='nomUsuario'>{a.nomUsuario}</label>
-                            </div>
+                            
                             <div class='agregarM-container'>
                                 <button class='agregarM' onClick={() => setSiguiendo(s => !s)}></button>
                                 <Link class='child-link' to='/pantalla_otro'></Link>
@@ -56,3 +64,8 @@ function Matcheo(){
     );
 }
 export default Matcheo;
+{
+    /*
+    
+    */
+}
