@@ -1,6 +1,11 @@
 body{
     background: linear-gradient(180deg, rgba(0, 249, 249, 0.3192) -22.33%, rgba(89, 7, 102, 0.3192) 75.59%);
 }
+.CheshireCat{
+    height: 80vh;
+    width: 40vw;
+    margin: auto;
+}
 .top-matcheo{
     display: flex;
     justify-content: center;
@@ -57,29 +62,15 @@ img{
     height: 100%;
 }
 .labels-container{
-    position: absolute;
+    display: flex;
     left: 30%;
     width: 40vw;
     height: 40vh;
     border-radius: 10%;
     background-color: #ddd;
 }
-.btnIzq{
-    position: absolute;
-    top: 50%;
-    left: 0%;
-    width: 5vw;
-    height: 5vh;
-}
-.btnDer{
-    position: absolute;
-    top: 50%;
-    left: 95%;
-    width: 5vw;
-    height: 5vh;
-}
 .tagSim{
-    position: absolute;
+    display: flex;
     width: 25%;
     height: 8%;
     background-color: black;

@@ -4,6 +4,12 @@ import Matcheo from './matcheo/pantallaMatcheo.js';
 import Busqueda from './matcheo/Busqueda';
 import Etiquetas from './matcheo/Etiquetas';
 import Home from './matcheo/Home';
+import Inicio from "./matcheo/inicio";
+import Login from "./matcheo/login";
+import Register from "./matcheo/register";
+import Perfil from "./matcheo/perfil";
+import Subir from "./matcheo/subir";
+
 function App() {
   return (
     <>
@@ -14,6 +20,11 @@ function App() {
         <Route path='pantallaMatcheo' element={<Matcheo />} />
         <Route path='Busqueda' element={<Busqueda />} />
         <Route path='/' element={<Home />} />
+        <Route path='inicio' element={<Inicio/>} />
+        <Route path='login' element={<Login/>} />
+        <Route path='register' element={<Register/>}/>
+        <Route path='perfil' element={<Perfil/>}/>
+        <Route path='subir' element={<Subir/>}/>
       </Routes>
     </BrowserRouter>
 

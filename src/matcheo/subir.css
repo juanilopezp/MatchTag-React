@@ -1,0 +1,99 @@
+html{
+    height: 100%;   
+}
+
+.login-cajas {
+	position: absolute;
+	width: 100%;
+	height: 156px;
+	left: 0px;
+	top: 0px;
+
+	background: linear-gradient(180deg, rgba(203, 173, 241, 0.82) 0%, rgba(255, 33, 33, 0.07) 114.1%);
+	box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+body{
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 249, 249, 0.27) 0%, rgba(89, 7, 102, 0.38) 100%);
+box-shadow: 8px 14px 28px rgba(0, 0, 0, 0.2);
+    background-repeat: no-repeat;    
+    
+}
+
+.recuadro{
+    position: absolute;
+width: 659px;
+height: 587px;
+left: 10%;
+top: 20%;
+
+background: rgba(201, 203, 203, 0.29);
+box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.56);
+border-radius: 30px;
+}
+
+.subir-pun{
+    position: absolute;
+width: 697px;
+height: 340px;
+left: 46%;
+top: 30%;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 96px;
+line-height: 116px;
+
+background: linear-gradient(180deg, #4FDCCB 28.65%, #FFFFFE 54.69%, #FFCF55 65.1%, #FFFFFF 73.96%, rgba(125, 189, 95, 0.68) 79.17%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+text-shadow: 0px 4px 0px #FFC267;
+background: linear-gradient(180deg, #536E8E 0%, #861C88 100%);
+box-shadow: 5px 4px 11px rgba(0, 0, 0, 0.66);
+border-radius: 483px;
+}
+
+.subir-foto{
+    box-sizing: border-box;
+
+position: absolute;
+width: 435px;
+height: 81px;
+left: 17%;
+top: 69%;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 39px;
+
+color: #000000;
+background: #FFFFFF;
+border: 6px solid #000000;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+
+.pc {
+	position: absolute;
+width: 102px;
+height: 98px;
+left: 12%;
+top: 68%;
+
+}
+
+.fotito {
+    position: absolute;
+    width: 156px;
+    height: 182px;
+    left: 20%;
+    top: 35%;
+
+}
+
+

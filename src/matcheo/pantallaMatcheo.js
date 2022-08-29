@@ -22,7 +22,7 @@ function Matcheo(){
                     {DataUsu.map((a, index)=>{
                         return(
                         <>
-                        <div class='CheshireCat'>
+                        <div id = 'CheshireCat' class='CheshireCat'>
                             <div class="top-matcheo">
                                 <div id = 'user-render' class='fotomatch-container'>
                                     <div class='fotoMatch'>
@@ -44,8 +44,6 @@ function Matcheo(){
                                 </label>
                             </div>
                         </div>
-                            <button class ='btnIzq'></button>
-                            <button class='btnDer'></button>  
                             </>
                             )
                     })}

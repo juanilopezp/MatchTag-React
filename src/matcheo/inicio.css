@@ -1,0 +1,495 @@
+html{
+    height: 100%;   
+}
+body{
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 255, 209, 0.21) 6.07%, rgba(252, 186, 18, 0.36) 106.07%);
+    background-repeat: no-repeat;    
+    
+}
+
+.login-cajas {
+	position: absolute;
+	width: 100%;
+	height: 156px;
+	left: 0px;
+	top: 0px;
+
+	background: linear-gradient(180deg, rgba(0, 178, 255, 0.78) 0%, rgba(9, 255, 196, 0.72) 0.01%, rgba(9, 211, 211, 0.58) 48.44%, rgba(233, 139, 229, 0.93) 100%);
+	box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.login-boton {
+    box-sizing: border-box;
+
+   position: absolute;
+   width: 216px;
+   height: 86px;
+   left: 70%	;
+   top: 3%;
+
+   background: #FFFFFF;
+   border: 2px solid #FFFFFF;
+   border-radius: 50px;
+     
+     font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+
+color: #000000;
+}
+
+.login-registrarse {
+	box-sizing: border-box;
+
+	position: absolute;
+	width: 216px;
+	height: 86px;
+	left: 80%;
+	top: 3%;
+
+	background: #FFFFFF;
+	border: 2px solid #FFFFFF;
+	border-radius: 50px;
+	  
+	  font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #000000;
+}
+.login-texto {
+	position: absolute;
+	width: 760px;
+	height: 754px;
+	left: 60%;
+	top: 37%;
+
+	font-family: 'Jaldi';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 144.52%;
+	/* or 52px */
+
+	text-align: center;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+
+	color: #000000;
+}
+
+.login-copy {
+	position: absolute;
+width: 651px;
+height: 223px;
+left: 2%;
+top: 30%;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 900;
+font-size: 64px;
+line-height: 92px;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+
+color: #3B3232;
+
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+.login-copy2 {
+	position: absolute;
+width: 395px;
+height: 92px;
+left: 2%;
+top: 50%;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 900;
+font-size: 64px;
+line-height: 92px;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+
+color: #3C3232;
+
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.login-copy3 {
+position: absolute;
+width: 395px;
+height: 92px;
+left: 2%;
+top: 55%;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 900;
+font-size: 64px;
+line-height: 92px;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+
+color: #3C3232;
+
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.login-match {
+	position: absolute;
+left: 0.67%;
+right: 2.23%;
+top: 50%;
+
+
+font-family: 'Verdana';
+font-style: italic;
+font-weight: 400;
+font-size: 150px;
+line-height: 144.52%;
+/* or 217px */
+
+letter-spacing: 0.05em;
+text-transform: uppercase;
+
+background: linear-gradient(180deg, #0E43FF 6.77%, rgba(255, 10, 10, 0.63) 90.1%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+
+
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+transform: rotate(-9.68deg);
+	
+}
+.login-line {
+	position: absolute;
+width: 724.85px;
+height: 0px;
+left: 0,2%;
+top: 85%;
+
+border: 7px solid #BE04C1;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+transform: rotate(-11.22deg);
+}
+.login-line2 {
+	position: absolute;
+width: 724.85px;
+height: 0px;
+left: 0,1%;
+top: 87%;
+
+border: 7px solid #8816FB;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+transform: rotate(-11.22deg);
+}
+.mini {
+    position: absolute;
+	width: 671px;
+	height: 634px;
+	left: 60%;
+	top: 7%;
+}
+.login-circulo {
+	box-sizing: border-box;
+-moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+position: absolute;
+width: 1193px;
+height: 1193px;
+left: -14%;
+top: 25%;
+
+background: linear-gradient(201.71deg, #43D8EC 19.54%, rgba(217, 217, 217, 0) 92.05%, #83B0A4 92.05%);
+border: 1px solid #FEF6ED;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.login-rectangulo {
+	position: absolute;
+width: 754px;
+height: 1031px;
+left: 23%;
+top: 4%;
+
+background: #FFFFFF;
+mix-blend-mode: normal;
+box-shadow: 0px 4px 195px rgba(0, 0, 0, 0.25);
+border-radius: 28px;
+}
+.login-nombre {
+	position: absolute;
+width: 622px;
+height: 94px;
+left: 26%;
+top: 14%;
+
+font-family: 'JejuGothic';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 144.52%;
+/* or 52px */
+
+letter-spacing: 0.05em;
+text-transform: uppercase;
+
+color: #000000;
+}
+.login-cuenta {
+	box-sizing: border-box;
+
+position: absolute;
+width: 631px;
+height: 93px;
+left: 26%;
+top: 23%;
+	
+	font-family: 'JejuGothic';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 144.52%;
+
+border: 1px solid #000000;
+border-radius: 13px;
+}
+.login-pass {
+	position: absolute;
+width: 622px;
+height: 94px;
+left: 26%;
+top: 37%;
+
+font-family: 'JejuGothic';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 144.52%;
+/* or 52px */
+
+letter-spacing: 0.05em;
+text-transform: uppercase;
+
+color: #000000;
+}
+.login-pass2 {
+	box-sizing: border-box;
+
+position: absolute;
+width: 631px;
+height: 93px;
+left: 26%;
+top: 47%;
+	
+	font-family: 'JejuGothic';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 144.52%;
+
+border: 1px solid #000000;
+border-radius: 13px;
+}
+ .login-botonpass {
+	 box-sizing: border-box;
+
+	position: absolute;
+	width: 216px;
+	height: 86px;
+	left: 33%	;
+	top: 65%;
+
+	background: #808080;
+	border: 2px solid #FFFFFF;
+	border-radius: 50px;
+	  
+	  font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+
+color: #000000;
+
+}
+.register-botonpass {
+	position: absolute;
+width: 399px;
+height: 103px;
+left: 30%;
+top: 73%;
+
+background: #1C1414;
+box-shadow: 0px 4px 75px 16px rgba(0, 0, 0, 0.25);
+border-radius: 85px;
+	font-family: 'JejuGothic';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 144.52%;
+/* or 58px */
+
+letter-spacing: 0.05em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+}
+.register-nombre {
+	position: absolute;
+width: 622px;
+height: 94px;
+left: 26%;
+top: 8%;
+
+font-family: 'JejuGothic';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 144.52%;
+/* or 52px */
+
+letter-spacing: 0.05em;
+text-transform: uppercase;
+
+color: #000000;
+
+}
+.register-nombre2 {
+	box-sizing: border-box;
+
+position: absolute;
+width: 631px;
+height: 93px;
+left: 26%;
+top: 17%;
+font-family: 'JejuGothic';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 144.52%;
+/* or 52px */
+border: 1px solid #000000;
+border-radius: 13px;
+}
+.register-apellido {
+	position: absolute;
+width: 622px;
+height: 94px;
+left: 26%;
+top: 23%;
+
+font-family: 'JejuGothic';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 144.52%;
+/* or 52px */
+
+letter-spacing: 0.05em;
+text-transform: uppercase;
+
+color: #000000;
+
+}
+.register-apellido2 {
+	box-sizing: border-box;
+
+position: absolute;
+width: 631px;
+height: 93px;
+left: 26%;
+top: 33%;
+	font-family: 'JejuGothic';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 144.52%;
+
+border: 1px solid #000000;
+border-radius: 13px;
+}
+.register-nomp {
+	position: absolute;
+width: 622px;
+height: 94px;
+left: 26%;
+top: 41%;
+
+font-family: 'JejuGothic';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 144.52%;
+/* or 52px */
+
+letter-spacing: 0.05em;
+text-transform: uppercase;
+
+color: #000000;
+}
+.register-nomp2 {
+	box-sizing: border-box;
+
+position: absolute;
+width: 631px;
+height: 93px;
+left: 26%;
+top: 50%;
+font-family: 'JejuGothic';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 144.52%;
+border: 1px solid #000000;
+border-radius: 13px;
+}
+.register-pass {
+	position: absolute;
+width: 622px;
+height: 94px;
+left: 26%;
+top: 56%;
+
+font-family: 'JejuGothic';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 144.52%;
+/* or 52px */
+
+letter-spacing: 0.05em;
+text-transform: uppercase;
+
+color: #000000;
+}
+.register-pass2 {
+	box-sizing: border-box;
+
+position: absolute;
+width: 631px;
+height: 93px;
+left: 26%;
+top: 64%;
+font-family: 'JejuGothic';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 144.52%;
+border: 1px solid #000000;
+border-radius: 13px;
+}
