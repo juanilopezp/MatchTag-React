@@ -33,7 +33,7 @@ function PantallaOtro() {
 								<h1>Publicaciones</h1>
 								<motion.div class="publicaciones-container" drag='y'>
 									<img class='publicaciones' src={user.publicaciones} />
-									<div class='comentarios'></div>
+									<div class='comentarios'>{user.coments}</div>
 								</motion.div>
 							</div>
 						</div></>

@@ -2,17 +2,31 @@ import React, {useState} from 'react'
 import { BrowserRouter , Link} from 'react-router-dom'
 import './Etiquetas.css';
 function Etiquetas() {
-  const dataE = [{"nomEtiqueta": "Deporte"},
-  {"nomEtiqueta": "Musica"},
-  {"nomEtiqueta": "Juegos"},
-  {"nomEtiqueta": "Cine"},
-  {"nomEtiqueta": "Ciencia"},
-  {"nomEtiqueta": "Estudio"}]
+  const dataE = 
+    [
+      {"nomEtiqueta": "Deporte"},
+      {"nomEtiqueta": "Musica"},
+      {"nomEtiqueta": "Videojuegos"},
+      {"nomEtiqueta": "Cine"},
+      {"nomEtiqueta": "Computacion"},
+      {"nomEtiqueta": "Comida"},
+      {"nomEtiqueta": "Autos"},
+      {"nomEtiqueta": "Arte"},
+      {"nomEtiqueta": "Ropa"},
+      {"nomEtiqueta": "Gym"}
+    ]
       const[searchTerm, setSearchTerm] = useState('')
       const[Yeah, setYeah] = useState(true)
       const handleChange = (data) =>{
         console.log(data)
         }
+      const coreaDelNorte = async (parameter, id)=>{
+        const respuesta = await fetch("http://localhost3000/Etiquetas/:$id", {
+          method: "POST",
+        });
+        const usa = await respuesta.json();
+        window.location.pathname='/'
+      }
         
       
 //CAPAZ PUEDO HACER LOS BOTONES FUNCIONAR, SI HAGO QUE CADA VEZ QUE SE APRETE EL BOTON SE CHEQUEE LA CHECKBOX
@@ -36,7 +50,7 @@ function Etiquetas() {
        </form>
       </section>
     
-      <button className="LoginBtn" onClick={(e)=>{window.location.pathname='/'}}>
+      <button className="LoginBtn" onClick={coreaDelNorte} >
         Continuar
       </button>
     
