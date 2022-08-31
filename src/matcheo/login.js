@@ -5,10 +5,6 @@ import mini from './mini.png'
 function Login() {
   return (
     <>
-    
-    
-
-    
     <h1 class="login-cajas">&nbsp;</h1>
     <h1 class="login-fondo">&nbsp;</h1>
     <h1 class="login-circulo">&nbsp;</h1>
