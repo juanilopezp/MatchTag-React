@@ -17,7 +17,7 @@ function Home() {
     },
     {
       title: 'Subir foto',
-      path:'/subir',
+      path:'/Publicar',
       cName :'nav-Subir'
     }
   ]

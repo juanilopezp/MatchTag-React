@@ -7,7 +7,6 @@ import Home from './matcheo/Home';
 import Inicio from "./matcheo/inicio";
 import Login from "./matcheo/login";
 import Register from "./matcheo/register";
-import Perfil from "./matcheo/perfil";
 import Subir from "./matcheo/subir";
 
 function App() {
@@ -20,11 +19,10 @@ function App() {
         <Route path='pantallaMatcheo' element={<Matcheo />} />
         <Route path='Busqueda' element={<Busqueda />} />
         <Route path='/' element={<Home />} />
-        <Route path='inicio' element={<Inicio/>} />
-        <Route path='login' element={<Login/>} />
-        <Route path='register' element={<Register/>}/>
-        <Route path='perfil' element={<Perfil/>}/>
-        <Route path='subir' element={<Subir/>}/>
+        <Route path='Bienvenido' element={<Inicio/>} />
+        <Route path='Login' element={<Login/>} />
+        <Route path='Register' element={<Register/>}/>
+        <Route path='Publicar' element={<Subir/>}/>
       </Routes>
     </BrowserRouter>
 

@@ -20,13 +20,11 @@ function Login() {
         <form action="/login" method="submit"> <input name="login" type="submit" class="login-boton" id="login-boton" value="Iniciar sesion" onclick="login.js" /></form>
 			 <form action="/register" method="submit">  <input name="registro" type="submit" class="login-registrarse" id="login-registrarse" value="Registrarse" onclick="register.js"/></form>
         <h4 class="login-nombre">NOMBRE DE CUENTA</h4>
-		<form action="home.html" method="post"><input class="login-cuenta" name="nombre" type="text" />
+		<form action="/" method="post"><input class="login-cuenta" name="nombre" type="text" />
 		<h4 class="login-pass">CONTRASEÑA</h4>
 			<input class="login-pass2" name="nombre" type="password" />
 			 <input name="login" type="submit" class="login-botonpass" id="login" value="INGRESAR"/>
 			</form>
-
-
     </>
 
 
