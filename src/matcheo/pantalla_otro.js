@@ -34,6 +34,7 @@ function PantallaOtro() {
 								<motion.div class="publicaciones-container" drag='y'>
 									<img class='publicaciones' src={user.publicaciones} />
 									<div class='comentarios'>{user.coments}</div>
+									<div class='likes'></div>
 								</motion.div>
 							</div>
 						</div></>
