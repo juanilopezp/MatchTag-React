@@ -6,13 +6,13 @@ import {Route, Link} from "react-router-dom";
 import DataUsu from './Usuarios.json';
 function Matcheo(){
     const [siguiendo, setSiguiendo] = useState(false);
-    const handleSubmit = (z) =>{
+    /*const handleSubmit = (z) =>{
         z.preventDefault();
         fetch('http://localhost:3000/pantallaMatcheo',{
             method: 'POST',
             body: JSON.stringify(siguiendo),
         })
-    }
+    }*/
     return(
         <>
             
@@ -58,8 +58,3 @@ function Matcheo(){
     );
 }
 export default Matcheo;
-{
-    /*
-    
-    */
-}

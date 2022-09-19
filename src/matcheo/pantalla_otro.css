@@ -75,3 +75,9 @@ body{
     border-radius: 50%;
     border: #f0a 0.5rem solid;
 }
+.likes{
+    position: absolute;
+    background: url('pngegg (2) 1.png') no-repeat;
+    height: 4vh;
+    width: 2vw;
+}
