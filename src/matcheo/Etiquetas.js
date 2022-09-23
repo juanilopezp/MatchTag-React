@@ -20,13 +20,13 @@ function Etiquetas() {
       const handleChange = (data) =>{
         console.log(data)
         }
-      const coreaDelNorte = async (parameter, id)=>{
+      /*const coreaDelNorte = async (parameter, id)=>{
         const respuesta = await fetch("http://localhost3000/Etiquetas/:$id", {
           method: "POST",
         });
         const usa = await respuesta.json();
         window.location.pathname='/'
-      }
+      }*/
         
       
 //CAPAZ PUEDO HACER LOS BOTONES FUNCIONAR, SI HAGO QUE CADA VEZ QUE SE APRETE EL BOTON SE CHEQUEE LA CHECKBOX
@@ -50,7 +50,7 @@ function Etiquetas() {
        </form>
       </section>
     
-      <button className="LoginBtn" onClick={coreaDelNorte} >
+      <button className="LoginBtn" /*onClick={coreaDelNorte}*/>
         Continuar
       </button>
     

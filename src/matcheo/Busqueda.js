@@ -4,9 +4,9 @@ import DataUsu from './Usuarios.json'
 import { useState } from 'react';
 function Busqueda(){
     const[searchTerm, setSearchTerm] = useState('')
-    const loadTask = async () =>{
+    /*const loadTask = async () =>{
       const response = await fetch('http://localhost:3000/Busqueda')
-    }
+    }*/
     return(
         <>
         
