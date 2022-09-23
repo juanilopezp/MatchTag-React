@@ -10,6 +10,17 @@ function PantallaOtro() {
 	})
 	*/ }
 	const [siguiendo, setSiguiendo] = useState(false);
+	const [comentarios, setComentarios] = useState('')
+	const [mostrarCom, setMostrarCom] = useState([])
+	const onClickHandler = () =>{
+		setMostrarCom((mostrarCom)=>[...mostrarCom, comentarios]).then(()=>{
+			$("#output").val("");
+		});
+	}
+	
+	const onChangeHandler = (e) =>{
+		setComentarios (e.target.value)
+	}
 	return (
 
 
@@ -23,7 +34,10 @@ function PantallaOtro() {
 								<img class='phPerfil' src={user.phPerfil} />
 								<h1>{user.nomUsuario}</h1>
 								<div class="botones">
-									<button id="btnMatch" onClick={() => setSiguiendo(s => !s)}>{siguiendo ? "Siguiendo" : "Seguir"}</button>
+									<button 
+									id="btnMatch" 
+									onClick={() => setSiguiendo(s => !s)}>{siguiendo ? "Siguiendo" : "Seguir"}
+									</button>
 								</div>
 								<div class='tags-container'>
 									<div class='tags'>{user.tags}</div>
@@ -32,16 +46,33 @@ function PantallaOtro() {
 							<div class="usuarioRight">
 								<h1>Publicaciones</h1>
 								<motion.div class="publicaciones-container" drag='y'>
-									<img class='publicaciones' src={user.publicaciones} />
-									<div class='comentarios'>{user.coments}</div>
-									<div class='likes'></div>
+									<div>
+										<img class='publicaciones' src={user.publicaciones} />
+										<div class='likes'></div>
+									</div>
+									<div class='comentarios-container'>
+										{mostrarCom.map((text)=>(
+											<div class='comentarios'>
+												{text}
+											</div>
+										))}
+										<div class='input-container'>
+											<input 
+											value={comentarios} 
+											onChange={onChangeHandler} 
+											class='caja-input'
+											/>
+											<button onClick={onClickHandler} class='subir-btn'>
+												Subir
+											</button>
+										</div>
+										
+									</div>
 								</motion.div>
 							</div>
 						</div></>
 				)
 			})}
-
-
 		</>
 	)
 }
