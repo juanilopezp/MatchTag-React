@@ -8,6 +8,7 @@ import Inicio from "./matcheo/inicio";
 import Login from "./matcheo/login";
 import Register from "./matcheo/register";
 import Subir from "./matcheo/subir";
+import Edicion from './matcheo/Edicion';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path='Login' element={<Login/>} />
         <Route path='Register' element={<Register/>}/>
         <Route path='Publicar' element={<Subir/>}/>
+        <Route path='Edicion' element={<Edicion/>}/>
       </Routes>
     </BrowserRouter>
 
