@@ -53,7 +53,7 @@ function PantallaOtro() {
 						<motion.div class="publicaciones-container" drag='y'>
 							<div class='publicaciones'>
 								<img src={user.publicaciones} />
-								<div 
+								<div
 								className={[like ? 'active-like': 'like']}
 								onClick={likeFunction}>
 								</div>

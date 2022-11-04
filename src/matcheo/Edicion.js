@@ -3,7 +3,10 @@ import './Edicion.css'
 
 function Edicion() {
   return (
-    <form><input className="change_foto" type='file'>Cambiar Foto de Perfil</input></form>
+    <>
+    <input className="change_foto" type='file' />
+    <input placeholder='Editar nombre' />
+    </>
   )
 }
 
