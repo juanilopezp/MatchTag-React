@@ -9,6 +9,29 @@ function PantallaOtro() {
 		btnCambio.innerText = 'Esperando aprobacion';
 	})
 	*/ }
+	const SideBar =
+  [
+    {
+      title: 'Mi perfil',
+      path:'/perfil',
+      cName: 'nav-Perfil'
+    },
+    {
+      title: 'Buscar perfil',
+      path:'/Busqueda',
+      cName:'nav-Busqueda'
+    },
+    {
+      title: 'Subir foto',
+      path:'/Publicar',
+      cName :'nav-Subir'
+    },
+    {
+      title: 'Matcheo',
+      path:'/pantallaMatcheo',
+      cName:'nav-Matcheo'
+    }
+  ]
 	const [siguiendo, setSiguiendo] = useState(false);
 	const [like, setLike] = useState(false);
 	function likeFunction(){
