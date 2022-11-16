@@ -7,7 +7,10 @@
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
     "@trendmicro/react-sidenav": "^0.5.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
     "framer-motion": "^7.2.0",
+    "morgan": "^1.10.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.36.0",
@@ -17,10 +20,11 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node src/index.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "dev": "nodemon src/index.js"
   },
   "eslintConfig": {
     "extends": [
@@ -42,7 +46,6 @@
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/juanilopezp/MatchTag-React.git"
@@ -53,5 +56,8 @@
   "bugs": {
     "url": "https://github.com/juanilopezp/MatchTag-React/issues"
   },
-  "homepage": "https://github.com/juanilopezp/MatchTag-React#readme"
+  "homepage": "https://github.com/juanilopezp/MatchTag-React#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
 }
