@@ -8,6 +8,3 @@ const pool = new Pool ({
     database: 'Matchtag'
 })
 module.exports = pool;
-//$env:OPENSSL_CONF = ''   
-//instalar nodemon -D
-//instalar express morgan cors
