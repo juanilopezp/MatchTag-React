@@ -55,9 +55,8 @@ function PantallaOtro() {
 	return (
 	<>
 		{DataUsu.map(user => {
-				return (
+			return (
 			<>
-			
 				<div class='container'>
 					<div class="usuarioLeft">
 						<img class='phPerfil' src={user.phPerfil} />
