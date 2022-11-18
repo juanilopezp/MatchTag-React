@@ -1,10 +1,18 @@
-const {Pool} = require('pg')
-
-const pool = new Pool ({
-    user: 'postgres',
-    password: 'matchtag',
-    host: 'localhost',
+const {Client} = require('pg');
+const client = new Client({
+    host: "localhost",
+    user: "postgres",
     port: 5432,
-    database: 'Matchtag'
+    password: "matchtag",
+    database: "Matchtag"
 })
-module.exports = pool;
+client.connect();
+client.query(`Select * from Etiquetas`, (err, res)=>{
+    if(!err){
+        console.log(res.rows);
+    }
+    else{
+        console.log(err.message);
+    }
+    client.end();
+})
