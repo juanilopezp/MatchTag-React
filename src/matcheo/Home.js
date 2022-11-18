@@ -19,11 +19,6 @@ function Home() {
       title: 'Subir foto',
       path:'/Publicar',
       cName :'nav-Subir'
-    },
-    {
-      title: 'Matcheo',
-      path:'/pantallaMatcheo',
-      cName:'nav-Matcheo'
     }
   ]
   const [sideBar, setSideBar] = useState(false);
